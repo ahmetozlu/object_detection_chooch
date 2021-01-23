@@ -1,11 +1,11 @@
 # Object Detection by using CHOOCH AI API
 This repository focuses developing a sample project for object detection using CHOOCH AI API and OpenCV. CHOOCH AI is used for object detection, OpenCV is used for drawing bounding boxes and saving the output images.
 
-CHOOCH AI provides object detection in milliseconds and it is reachable any edge devices since it uses HTTP methods (as like a RESTful web service).
-
 <p align="center">
   <img src="https://user-images.githubusercontent.com/22610163/105612702-a8b4cf00-5dce-11eb-9ecf-3c39a9a1d301.gif" | width = 720>
 </p>
+
+**CHOOCH AI provides object detection in milliseconds and it is reachable any edge devices since it uses HTTP methods (as like a RESTful web service).**
 
 ---
 Here are the cool features of this project:
@@ -28,7 +28,7 @@ Here are the cool features of this project:
 Here are the explanation of software work flow:
 
 - Input image sends (http post) to CHOOCH AI and then detected objects information fetch in json format.
-- Json string is parsed and the detected objects information are stored in a python dictionary variable (key='object_title', value='coordinates').
+- Json string is parsed and the detected objects information are stored in a dictionary (key='object_title', value='coordinates').
 - Drawing bounding boxes around the etected object using OpenCV.
 - Cropping the detected objects and saving as new images using OpenCV.
 - Storing the detected object informatin in csv files.
@@ -68,4 +68,5 @@ Ahmet Özlü
 
 ## License
 This system is available under the MIT license. See the LICENSE file for more info.
+
 
