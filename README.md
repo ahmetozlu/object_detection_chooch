@@ -8,7 +8,7 @@ CHOOCH AI provides object detection in milliseconds and it is reachable any edge
 </p>
 
 ---
-Here is the cool features of this project:
+Here are the cool features of this project:
 
 - Detecting the objects in milliseconds.
 - Detecting the texts in milliseconds.
@@ -25,21 +25,25 @@ Here is the cool features of this project:
   <img src="https://user-images.githubusercontent.com/22610163/105613442-9721f600-5dd3-11eb-84f0-9c1b5c27d082.png" | width = 720>
 </p>
 
+Here are the explanation of software work flow:
+
 - Input image sends (http post) to CHOOCH AI and then detected objects information fetch in json format.
-- Json string is parsed and the detected objects information are stored in a python dictionary variable (key=detected_object_name, value=pixel_coordinates).
+- Json string is parsed and the detected objects information are stored in a python dictionary variable (key='object_title', value='coordinates').
 - Drawing bounding boxes around the etected object using OpenCV.
 - Cropping the detected objects and saving as new images using OpenCV.
 - Storing the detected object informatin in csv files.
 
 ### Folders and files explanations
 
-[main.py](https://github.com/ahmetozlu/object_detection_chooch/blob/main/main.py): main python program that contains all of the logic.
-[detected_objects](https://github.com/ahmetozlu/object_detection_chooch/tree/main/detected_objects): Detected objects are cropped and saved as new images under this folder.
-[detected_texts](https://github.com/ahmetozlu/object_detection_chooch/tree/main/detected_texts): Detected texts are cropped and saved as new images under this folder.
-[input](https://github.com/ahmetozlu/object_detection_chooch/tree/main/input): Input images are located under this folder.
-[output](https://github.com/ahmetozlu/object_detection_chooch/tree/main/output): Input images are stored in folder.
-[object_detection.csv](https://github.com/ahmetozlu/object_detection_chooch/blob/main/object_detection.csv): Detected object information are stored in this csv file.
-[text_detection.csv](https://github.com/ahmetozlu/object_detection_chooch/blob/main/text_detection.csv): Detected text information are stored in this csv file.
+Here are the explanation of folders and files:
+
+- [main.py](https://github.com/ahmetozlu/object_detection_chooch/blob/main/main.py): main python program that contains all of the logic.
+- [detected_objects](https://github.com/ahmetozlu/object_detection_chooch/tree/main/detected_objects): Detected objects are cropped and saved as new images under this folder.
+- [detected_texts](https://github.com/ahmetozlu/object_detection_chooch/tree/main/detected_texts): Detected texts are cropped and saved as new images under this folder.
+- [input](https://github.com/ahmetozlu/object_detection_chooch/tree/main/input): Input images are located under this folder.
+- [output](https://github.com/ahmetozlu/object_detection_chooch/tree/main/output): Input images are stored in folder.
+- [object_detection.csv](https://github.com/ahmetozlu/object_detection_chooch/blob/main/object_detection.csv): Detected object information are stored in this csv file.
+- [text_detection.csv](https://github.com/ahmetozlu/object_detection_chooch/blob/main/text_detection.csv): Detected text information are stored in this csv file.
 
 ## Installation
 
@@ -64,3 +68,4 @@ Ahmet Özlü
 
 ## License
 This system is available under the MIT license. See the LICENSE file for more info.
+
