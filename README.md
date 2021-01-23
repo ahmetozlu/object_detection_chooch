@@ -5,7 +5,7 @@ This repository focuses developing a sample project for object detection using C
   <img src="https://user-images.githubusercontent.com/22610163/105612702-a8b4cf00-5dce-11eb-9ecf-3c39a9a1d301.gif" | width = 720>
 </p>
 
-**CHOOCH AI provides object detection in milliseconds and it is reachable any edge devices since it uses HTTP methods (as like a RESTful web service).**
+CHOOCH AI provides object detection in milliseconds and it is reachable any edge devices since it uses HTTP methods (as like a RESTful web service).
 
 ---
 Here are the cool features of this project:
