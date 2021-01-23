@@ -22,7 +22,7 @@ Here are the cool features of this project:
 ## Software Architecture
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/22610163/105613442-9721f600-5dd3-11eb-84f0-9c1b5c27d082.png" | width = 720>
+  <img src="https://user-images.githubusercontent.com/22610163/105613442-9721f600-5dd3-11eb-84f0-9c1b5c27d082.png" | width = 600>
 </p>
 
 Here are the explanation of software work flow:
