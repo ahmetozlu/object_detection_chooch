@@ -2,10 +2,11 @@ import requests
 import json
 import cv2
 import csv
-             
+
+# change apikey with yours
 url = 'https://api.chooch.ai/predict/image?apikey=8b534527-eb6b-4293-b653-de6eee231882'
 
-input_image = "input2.jpeg"
+input_image = "input7.png"
 files = {'image': open(input_image, 'rb')}
 
 response = requests.post(url, files=files)
@@ -14,6 +15,7 @@ response = requests.post(url, files=files)
 
 json_data = json.loads(response.text)
 
+# initialize csv files
 with open('object_detection.csv', 'w') as f:
 	writer = csv.writer(f)                          
 	csv_line = "object, x1, x2, y1, y2"
@@ -24,6 +26,7 @@ with open('text_detection.csv', 'w') as f:
 	csv_line = "text, x1, x2, y1, y2"
 	writer.writerows([csv_line.split(',')])
 
+# write data to csv function
 def write_csv (data1, data2, data3, data4, data5, detection_category):
 
 	if (detection_category == "object_detection"):
@@ -38,14 +41,19 @@ def write_csv (data1, data2, data3, data4, data5, detection_category):
 			csv_line = data1 + "," + data2 + "," + data3 + "," + data4 + "," + data5
 			writer.writerows([csv_line.split(',')])
 
+# crop the detected objects and texts
 def crop_custom(img, x1, y1, x2, y2): # crop custom
 	return img[y1:y2, x1:x2]
+
+# font to draw text on output image
+font = cv2.FONT_HERSHEY_SIMPLEX
 
 src_img = cv2.imread(input_image)
 img = cv2.imread(input_image)
 detection_data = {}
 counter = 0
-font = cv2.FONT_HERSHEY_SIMPLEX
+
+# parse the detected object names and pixel locations
 for i in json_data["objects"]["predictions"]:
 	if i["object_title"] in detection_data:
 		detection_data[i["object_title"] +"_" + str(counter)] = i["coordinates"]
@@ -76,10 +84,11 @@ for i in json_data["objects"]["predictions"]:
 		cropped_image = crop_custom(src_img, int(x1), int(y1), int(x2), int(y2))
 		cv2.imwrite("./detected_objects/" + input_image.split('.')[0] + "_" + str(i["object_title"]) + ".png", cropped_image)
 
-#print(detection_data)
-
+# reset the dictionary and the counter
 detection_data = {}
 counter = 0
+
+# parse the detected texts and pixel locations
 for i in json_data["texts"]["predictions"]:
 	try:
 		if i["text_value"] in detection_data and i["coordinates"] != None:
@@ -115,10 +124,11 @@ for i in json_data["texts"]["predictions"]:
 	except:
 		print("ok")
 
-#print(detection_data)
-
+# reset the dictionary and the counter
 detection_data = {}
 counter = 0
+
+# parse the detected objects and total counts of them
 for i in json_data["objects"]["summary"]:
 	try:
 		if i["object_title"] in detection_data and i["count"] != None:
@@ -131,7 +141,6 @@ for i in json_data["objects"]["summary"]:
 	except:
 		print("ok")
 
-print(detection_data)
-
-cv2.putText(img, str(detection_data), (20,35), font, 1, (0, 0, 255), 2, cv2.LINE_AA)
+# draw texts on output image and save it as a new image
+cv2.putText(img, str(detection_data), (20,35), font, 1, (255, 0, 0), 2, cv2.LINE_AA)
 cv2.imwrite(input_image.split('.')[0]+"_output.png",img)
