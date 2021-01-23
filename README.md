@@ -27,7 +27,7 @@ Here are the cool features of this project:
 
 Here are the explanation of software work flow:
 
-- Input image sends (http post) to CHOOCH AI and then detected objects information fetch in json format.
+- Input image is sent (http post) to CHOOCH AI and then detected objects information fetch in json format.
 - Json string is parsed and detected objects are stored in a dictionary (key='object_title', value='coordinates').
 - Drawing bounding boxes around the etected object using OpenCV.
 - Cropping the detected objects and saving as new images using OpenCV.
