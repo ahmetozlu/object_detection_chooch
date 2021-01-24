@@ -6,7 +6,6 @@ import csv
 # change apikey with yours
 url = 'https://api.chooch.ai/predict/image?apikey=8b534527-eb6b-4293-b653-de6eee231882'
 
-
 input_image = "input7.png"
 input_image_directory = "./input/" + input_image
 
@@ -14,7 +13,7 @@ files = {'image': open(input_image_directory, 'rb')}
 
 response = requests.post(url, files=files)
                               
-print(response.content)
+#print(response.content)
 
 json_data = json.loads(response.text)
 
