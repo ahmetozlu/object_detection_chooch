@@ -6,7 +6,7 @@ import csv
 # change apikey with yours
 url = 'https://api.chooch.ai/predict/image?apikey=8b534527-eb6b-4293-b653-de6eee231882'
 
-input_image = "input7.png"
+input_image = "input3.jpeg"
 input_image_directory = "./input/" + input_image
 
 files = {'image': open(input_image_directory, 'rb')}
@@ -139,12 +139,13 @@ for i in json_data["objects"]["summary"]:
 		else:
 			if i["count"] != None:
 				detection_data[i["object_title"]] = i["count"]
-			print(i["count"])
 	except:
 		print("ok")
+
+print("-> Detected objects with counts: " + str(detection_data))
 
 # draw texts on output image and save it as a new image
 cv2.putText(img, str(detection_data), (20,35), font, 1, (255, 0, 0), 2, cv2.LINE_AA)
 cv2.imwrite("./output/" + input_image.split('.')[0]+"_output.png",img)
 
-print("All the processes are done. The output image was save.")
+print("-> All the processes are done. The output image was saved in here: " + "./output/" + input_image.split('.')[0]+"_output.png")
