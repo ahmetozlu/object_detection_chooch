@@ -52,6 +52,9 @@ You don't need to instal any fancy library or package to run this program. CHOOC
 OpenCV can be installed by pip:
 
     pip install opencv-python
+    
+Moreover, please update the API key with your own key on [line#7 in main.py](https://github.com/ahmetozlu/object_detection_chooch/blob/main/main.py#L7).
+   
 
 ## Citation
 If you use this code for your publications, please cite it as:
@@ -68,5 +71,3 @@ Ahmet Özlü
 
 ## License
 This system is available under the MIT license. See the LICENSE file for more info.
-
-
