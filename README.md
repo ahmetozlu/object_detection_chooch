@@ -15,8 +15,8 @@ Some of the cool features of this project:
 - Detecting the texts in milliseconds.
 - Cropping the detected objects and saving them as new images.
 - Cropping the detected texts and saving them as new images.
-- Saving the detected objects titles and pixel coordinates in a csv file.
-- Saving the detected texts and pixel coordinates in a csv file.
+- Storing the detected objects titles and pixel coordinates in a csv file.
+- Storing the detected texts and pixel coordinates in a csv file.
 ---
 
 ## Software Architecture
