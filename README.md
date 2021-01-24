@@ -11,11 +11,11 @@ CHOOCH AI provides object detection in milliseconds and it is reachable any edge
 Some of the cool features of this project:
 
 - Detecting the objects in milliseconds.
+- Counting the objects in milliseconds.
 - Detecting the texts in milliseconds.
 - Cropping the detected objects and saving them as new images.
 - Cropping the detected texts and saving them as new images.
-- Counting the objects.
-- Saving the detected objects names and pixel coordinates in a csv file.
+- Saving the detected objects titles and pixel coordinates in a csv file.
 - Saving the detected texts and pixel coordinates in a csv file.
 ---
 
