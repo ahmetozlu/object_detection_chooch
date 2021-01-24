@@ -25,7 +25,7 @@ Some of the cool features of this project:
   <img src="https://user-images.githubusercontent.com/22610163/105613442-9721f600-5dd3-11eb-84f0-9c1b5c27d082.png" | width = 600>
 </p>
 
-Here are the explanation of software work flow:
+Here are the explanation of software work-flow:
 
 - Input image is sent (http post) to CHOOCH AI and then detected objects information fetch in json format.
 - Json string is parsed and detected objects are stored in a dictionary (key='object_title', value='coordinates').
@@ -59,7 +59,7 @@ Moreover, please update the API key with your own key on [line#7 in main.py](htt
 ## Citation
 If you use this code for your publications, please cite it as:
 
-    @ONLINE{odwca,
+    @ONLINE{
         author = "Ahmet Özlü",
         title  = "Object Detection with CHOOCH AI",
         year   = "2021",
