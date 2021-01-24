@@ -8,7 +8,7 @@ This repository focuses developing a sample project for object detection and cou
 CHOOCH AI provides object detection in milliseconds and it is reachable any edge devices since it uses HTTP methods (as like a RESTful web service).
 
 ---
-Here are the cool features of this project:
+Some of the cool features of this project:
 
 - Detecting the objects in milliseconds.
 - Detecting the texts in milliseconds.
