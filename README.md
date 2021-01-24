@@ -61,7 +61,7 @@ If you use this code for your publications, please cite it as:
 
     @ONLINE{
         author = "Ahmet Özlü",
-        title  = "Object Detection with CHOOCH AI",
+        title  = "Object Detection and Counting with CHOOCH AI API",
         year   = "2021",
         url    = "https://github.com/ahmetozlu/object_detection_chooch"
     }
