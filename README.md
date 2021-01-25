@@ -37,7 +37,7 @@ Here are the explanation of software work-flow:
 
 Here are the explanation of folders and files:
 
-- [main.py](https://github.com/ahmetozlu/object_detection_chooch/blob/main/main.py): main python program that contains all of the logic.
+- [main.py](https://github.com/ahmetozlu/object_detection_chooch/blob/main/main.py): Main python program that contains all of the logic.
 - [detected_objects](https://github.com/ahmetozlu/object_detection_chooch/tree/main/detected_objects): Detected objects are cropped and saved as new images under this folder.
 - [detected_texts](https://github.com/ahmetozlu/object_detection_chooch/tree/main/detected_texts): Detected texts are cropped and saved as new images under this folder.
 - [input](https://github.com/ahmetozlu/object_detection_chooch/tree/main/input): Input images are located under this folder.
