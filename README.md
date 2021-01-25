@@ -41,7 +41,7 @@ Here are the explanation of folders and files:
 - [detected_objects](https://github.com/ahmetozlu/object_detection_chooch/tree/main/detected_objects): Detected objects are cropped and saved as new images under this folder.
 - [detected_texts](https://github.com/ahmetozlu/object_detection_chooch/tree/main/detected_texts): Detected texts are cropped and saved as new images under this folder.
 - [input](https://github.com/ahmetozlu/object_detection_chooch/tree/main/input): Input images are located under this folder.
-- [output](https://github.com/ahmetozlu/object_detection_chooch/tree/main/output): Input images are stored in folder.
+- [output](https://github.com/ahmetozlu/object_detection_chooch/tree/main/output): Output images are stored in folder.
 - [object_detection.csv](https://github.com/ahmetozlu/object_detection_chooch/blob/main/object_detection.csv): Detected object information are stored in this csv file.
 - [text_detection.csv](https://github.com/ahmetozlu/object_detection_chooch/blob/main/text_detection.csv): Detected text information are stored in this csv file.
 
