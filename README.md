@@ -1,5 +1,5 @@
 # Object Detection by using CHOOCH AI API
-This repository focuses developing a sample project for object detection and counting using CHOOCH AI API and OpenCV. CHOOCH AI is used for object detection, OpenCV is used for drawing bounding boxes and saving the output images.
+This repository focuses developing a sample project for super fast object detection and counting using CHOOCH AI API and OpenCV. CHOOCH AI is used for super fast object detection, OpenCV is used for drawing bounding boxes and saving the output images.
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/22610163/105612702-a8b4cf00-5dce-11eb-9ecf-3c39a9a1d301.gif" | width = 720>
